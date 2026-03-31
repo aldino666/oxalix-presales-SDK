@@ -1,0 +1,76 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: radial-gradient(circle at top, #18264b 0%, #0b1020 55%);
+  color: #ebf0ff;
+}
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  display: grid;
+  gap: 16px;
+}
+.panel {
+  background: rgba(20, 26, 49, 0.95);
+  border: 1px solid #2a355f;
+  border-radius: 14px;
+  padding: 18px;
+}
+.header h1 { margin: 0 0 8px 0; }
+.header p { margin: 0; color: #b7c4f0; line-height: 1.45; }
+.walletPanel h2 { margin: 0; }
+label { display:block; margin-bottom: 6px; color: #b7c4f0; }
+select, input {
+  width: 100%;
+  background: #101734;
+  border: 1px solid #394774;
+  color: #ebf0ff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.hint { color: #9eb0ea; margin: 10px 0 14px 0; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  align-items: end;
+}
+.field { display: grid; gap: 6px; }
+.walletActions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+button {
+  height: 42px;
+  border: 0;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #5a67ff, #6c4cff);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0 14px;
+}
+button.secondary {
+  background: #232d52;
+  border: 1px solid #415082;
+}
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #0f1630;
+  border: 1px solid #303e6a;
+  border-radius: 10px;
+  padding: 14px;
+}
+.error {
+  color: #ffc5cd;
+  background: #3a1720;
+  border: 1px solid #6f2f3c;
+  border-radius: 10px;
+  padding: 12px;
+}

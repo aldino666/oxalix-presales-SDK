@@ -1,17 +1,22 @@
 {
   "name": "js-client",
   "version": "1.0.0",
-  "description": "",
+  "description": "Castway generated SDK + Next.js simulator UI",
   "main": "src/index.ts",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "keywords": [],
   "author": "",
-  "peerDependencies": {
-    "@solana/kit": "^6.1.0"
-  },
   "dependencies": {
-    "@solana/program-client-core": "^6.1.0"
+    "@solana/kit": "^6.1.0",
+    "@solana/program-client-core": "^6.1.0",
+    "next": "^15.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@solana/web3.js": "^1.98.2"
   }
 }
