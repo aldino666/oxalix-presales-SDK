@@ -1,17 +1,16 @@
 {
   "name": "js-client",
   "version": "1.0.0",
-  "description": "",
+  "description": "Castway generated SDK + web simulator",
   "main": "src/index.ts",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:web": "tsc -p tsconfig.web.json && cp index.html web-dist/index.html && cp src/web/style.css web-dist/style.css"
   },
   "keywords": [],
   "author": "",
-  "peerDependencies": {
-    "@solana/kit": "^6.1.0"
-  },
   "dependencies": {
+    "@solana/kit": "^6.1.0",
     "@solana/program-client-core": "^6.1.0"
   }
 }
