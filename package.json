@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
-    "build:web": "tsc -p tsconfig.web.json && cp index.html web-dist/index.html && cp src/web/style.css web-dist/style.css"
+    "build:web": "tsc -p tsconfig.web.json && cp index.html web-dist/index.html && cp src/web/style.css web-dist/style.css && node scripts/fix-web-imports.mjs"
   },
   "keywords": [],
   "author": "",
